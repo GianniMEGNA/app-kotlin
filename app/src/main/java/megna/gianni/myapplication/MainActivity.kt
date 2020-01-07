@@ -45,6 +45,10 @@ class MainActivity : AppCompatActivity() {
             override fun onResponse(call: Call<List<Tasks>>, response: Response<List<Tasks>>) {
                 Log.d("DL" , "good")
                 val posts = response.body()!!
+                Log.d("DL" , posts[0].id )
+                adapter.list = posts
+                adapter.notifyDataSetChanged()
+
             }
 
             override fun onFailure(call: Call<List<Tasks>>, t : Throwable) {

@@ -20,8 +20,8 @@ class MyListAdapter : RecyclerView.Adapter< MyListAdapter.ViewHolder >() {
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.itemView.cellText.text = list[position].title
-        holder.itemView.cellTextUser.text = list[position].description
+        holder.itemView.cellTextUser.text = list[position].title
+        holder.itemView.cellText.text = list[position].description
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)

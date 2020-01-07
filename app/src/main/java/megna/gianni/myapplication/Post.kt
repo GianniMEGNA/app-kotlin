@@ -1,7 +1,8 @@
 package megna.gianni.myapplication
 
 data class Tasks (
-    val id : Int,
+    val id : String,
     val title : String,
-    val description : String
+    val description : String,
+    val due_date : String
 )
